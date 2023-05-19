@@ -1,0 +1,21 @@
+#WAP to print name 10 times.
+
+SOURCE CODE:
+a=1
+while [ $a -le 10 ]
+do
+echo "SWADHIN"
+a=`expr $a + 1`
+done
+
+OUTPUT:
+SWADHIN
+SWADHIN
+SWADHIN
+SWADHIN
+SWADHIN
+SWADHIN
+SWADHIN
+SWADHIN
+SWADHIN
+SWADHIN

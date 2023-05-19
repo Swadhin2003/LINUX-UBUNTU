@@ -1,0 +1,78 @@
+kiit@SWADHIN:~/21051948$ cd KIIT
+kiit@SWADHIN:~/21051948/KIIT$ ls
+CS  CSCE  CSSE  IT
+kiit@SWADHIN:~/21051948/KIIT$ mkdir LAB-3
+kiit@SWADHIN:~/21051948/KIIT$ ls
+CS  CSCE  CSSE  IT  LAB-3
+kiit@SWADHIN:~/21051948/KIIT$ cd LAB-3
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ touch Player.txt
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ ls
+Player.txt
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ cat >Player.txt
+Sachin 42 12000
+Rohit 34 10000
+Rahul 28 7000
+Kohli 34 10000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ cat Player.txt
+Sachin 42 12000
+Rohit 34 10000
+Rahul 28 7000
+Kohli 34 10000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ sort +0 -1 Player.txt
+Kohli 34 10000
+Rahul 28 7000
+Rohit 34 10000
+Sachin 42 12000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ sort +1 -2 Player.txt
+Rahul 28 7000
+Kohli 34 10000
+Rohit 34 10000
+Sachin 42 12000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ sort +2 -3 Player.txt
+Kohli 34 10000
+Rohit 34 10000
+Sachin 42 12000
+Rahul 28 7000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ cut -d " " -f1 Player.txt
+Sachin
+Rohit
+Rahul
+Kohli
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ grep "Sachin" Player.txt
+Sachin 42 12000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ egrep "Kohli|Rohit" Player.txt
+Rohit 34 10000
+Kohli 34 10000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ fgrep "Rahul 28 7000" Player.txt
+Rahul 28 7000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ grep -i "Rohit" Player.txt
+Rohit 34 10000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ grep -v "Rohit" Player.txt
+Sachin 42 12000
+Rahul 28 7000
+Kohli 34 10000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ grep -c "Rohit" Player.txt
+1
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ grep -n "Rohit" Player.txt
+2:Rohit 34 10000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ grep "^K" Player.txt
+Kohli 34 10000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ grep "0$" Player.txt
+Sachin 42 12000
+Rohit 34 10000
+Rahul 28 7000
+Kohli 34 10000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ ls -l | grep "^d" > Directory
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ ls
+Directory  Player.txt
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ cat Player.txt | tr "[a-z]" "[A-Z]"
+SACHIN 42 12000
+ROHIT 34 10000
+RAHUL 28 7000
+KOHLI 34 10000
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ ls P*
+Player.txt
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ ls Player.tx?
+Player.txt
+kiit@SWADHIN:~/21051948/KIIT/LAB-3$ ls *y
+Directory

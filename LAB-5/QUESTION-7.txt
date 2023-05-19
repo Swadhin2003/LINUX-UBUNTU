@@ -1,0 +1,22 @@
+#WAP to display and count all the vowels in your name.
+
+SOURCE CODE:
+echo "Enter the string:"
+read str
+len=`expr length $str`
+count=0
+while [ $len -gt 0 ]
+do
+ch=`echo $str | cut -c $len`
+if [ $ch == "a" -o $ch == "e" -o $ch == "i" -o $ch == "o" -o $ch == "u" ]
+then
+count=`expr $count + 1`
+fi
+len=`expr $len - 1`
+done
+echo "The number of vowels in the string:$count"
+
+OUTPUT:
+Enter the string:
+swadhin
+The number of vowels in the string:2

@@ -1,0 +1,26 @@
+#WAP to check number is perfect or not.
+
+SOURCE CODE:
+echo "Enter a number:"
+read num
+i=1
+sum=0
+while [ $i -lt $num ]
+do
+if [ `expr $num % $i` -eq 0 ]
+then
+sum=`expr $sum + $i`
+fi
+i=`expr $i + 1`
+done
+if [ $sum -eq $num ]
+then
+echo "It is a perfect number."
+else
+echo "It is not a perfect number."
+fi
+
+OUTPUT:
+Enter a number:
+6
+It is a perfect number.

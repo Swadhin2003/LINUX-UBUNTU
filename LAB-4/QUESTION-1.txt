@@ -1,0 +1,14 @@
+#WAP to add 2 numbers and display the result.
+
+SOURCE CODE:
+echo "Enter 2 numbers:"
+read a
+read b
+c=`expr $a + $b`
+echo "Sum of 2 numbers:$c"
+
+OUTPUT:
+Enter 2 numbers:
+3
+5
+Sum of 2 numbers:8

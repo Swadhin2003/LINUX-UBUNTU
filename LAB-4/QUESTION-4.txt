@@ -1,0 +1,16 @@
+#WAP to check the number is divisible by 2 3 and 4.
+
+SOURCE CODE:
+echo "Enter a number:"
+read a
+if [ `expr $a % 2` -eq 0 -a `expr $a % 3` -eq 0 -a `expr $a % 4` -eq 0 ]
+then
+echo "$a is divisible"
+else
+echo "$a is not divisible"
+fi
+
+OUTPUT:
+Enter a number:
+9
+9 is not divisible

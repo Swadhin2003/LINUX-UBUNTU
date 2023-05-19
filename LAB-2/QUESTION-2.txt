@@ -1,0 +1,23 @@
+kiit@SWADHIN:~/21051948$ cd KIIT
+kiit@SWADHIN:~/21051948/KIIT$ ls
+CS  CSCE  CSSE  IT
+kiit@SWADHIN:~/21051948/KIIT$ cd CS
+kiit@SWADHIN:~/21051948/KIIT/CS$ cat >Q2.txt
+C
+C++
+JAVA
+ORACLE
+DBMS
+PYTHON
+kiit@SWADHIN:~/21051948/KIIT/CS$ head -5 Q2.txt | sort
+C
+C++
+DBMS
+JAVA
+ORACLE
+kiit@SWADHIN:~/21051948/KIIT/CS$ head -5 Q2.txt | sort | tail -3 | sort -r
+ORACLE
+JAVA
+DBMS
+kiit@SWADHIN:~/21051948/KIIT/CS$ head -5 Q2.txt | sort | tail -3 | sort -r | head -2 | wc -m
+12

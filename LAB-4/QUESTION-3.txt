@@ -1,0 +1,16 @@
+#Check whether the number is even or odd.
+
+SOURCE CODE:
+echo "Enter a number:"
+read a
+if [ `expr $a % 2` -eq 0 ]
+then
+echo "$a is even"
+else
+echo "$a is odd"
+fi
+
+OUTPUT:
+Enter a number:
+6
+6 is even
